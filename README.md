@@ -12,8 +12,8 @@
     O projeto se trata de um app que fornece informações sobre o jogo FPS Valorant, desde agentes, armas e skins.
 </h4>
 
-<h1 align="center" style="display:inline-block">
-  <img alt="app" title="#app" width="30" src="./readmeImages/image0.jpg" /> 
+<h1 align="center" style="display:flex; flex-direction:row">
+  <img alt="app" title="#app" width="30%" src="./readmeImages/image0.jpg" /> 
   <img alt="app" title="#app" width="30%" src="./readmeImages/image1.jpg" /> 
 </h1>
 
