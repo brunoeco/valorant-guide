@@ -13,13 +13,13 @@
 </h4>
 
 <h1 align="center" style="display:inline-block">
-  <img alt="app" title="#app" width="50%" src="./readmeImages/image0.jpg" /> 
-  <img alt="app" title="#app" width="50%" src="./readmeImages/image1.jpg" /> 
+  <img alt="app" title="#app" width="30" src="./readmeImages/image0.jpg" /> 
+  <img alt="app" title="#app" width="30%" src="./readmeImages/image1.jpg" /> 
 </h1>
 
 <h1 align="center" style="display:inline-block">
-  <img alt="app" title="#app" width="50%" src="./readmeImages/image2.png" /> 
-  <img alt="app" title="#app" width="50%" src="./readmeImages/image3.png" /> 
+  <img alt="app" title="#app" width="30%" src="./readmeImages/image2.png" /> 
+  <img alt="app" title="#app" width="30%" src="./readmeImages/image3.png" /> 
 </h1>
 
 <h3 id="tecnologias"> 🛠 Tecnologias</h3>
