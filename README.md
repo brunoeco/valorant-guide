@@ -9,6 +9,7 @@
 <!--te-->
     
 <h4 align="center" id="sobre">
+    Instalador do app (apk), dentro da pasta apk
     O projeto se trata de um app que fornece informações sobre o jogo FPS Valorant, desde agentes, armas e skins.
 </h4>
 
