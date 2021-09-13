@@ -1313,5 +1313,119 @@ export const db = {
             "imageUri": require("../assets/weapons/knife.png"),
             "weaponStats": null
         }
+    ],
+
+    "maps": [
+      {
+        "id": "07",
+        "displayName": "Fracture",
+        "imageUri": require("../assets/maps/fracture/fracture.png"),
+        "imageMapUri": require("../assets/maps/fracture/fractureMap.png"),
+        "description": "Um local de pesquisas altamente confidencial partido ao meio por um experimento com Radianita malsucedido. Com opções tão divididas quanto o próprio mapa para os defensores, a escolha é sua: encare os atacantes na própria base deles ou prepare o terreno para um ataque iminente.",
+        "gallery": [
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1a720126e3713bba/6131bf518e16ab655b34901a/Fracture_Screenshot-8.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt371ab49354f8002f/6131bedf07866d6a2d823d2c/Fracture_Screenshot-1.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt077539ab4901aaf7/6131bf103ff46b267bdfaf8a/Fracture_Screenshot-2.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt82553061d7056a29/6131bf1c85514a6ee3fac85b/Fracture_Screenshot-3.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd8125668a17bf789/6131bf268e16ab655b349016/Fracture_Screenshot-4.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt559b3f202346778e/6131bf326768907ea9769a83/Fracture_Screenshot-5.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6632690fbfaae9a1/6131bf3a504fe365615e53c9/Fracture_Screenshot-6.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3f78695e7d88d648/6131bf4507866d6a2d823d30/Fracture_Screenshot-7.jpg?auto=webp&width=915"
+        ]
+      },
+      {
+        "id": "06",
+        "displayName": "Breeze",
+        "imageUri": require("../assets/maps/breeze/breeze.png"),
+        "imageMapUri": require("../assets/maps/breeze/breezeMap.png"),
+        "description": "Conheça as ruínas históricas ou visite as grutas deste paraíso tropical. Mas é bom se cobrir, pois temos espaços muito abertos e embates de longa distância. Cuide dos seus flancos e você poderá curtir a brisa do Breeze.",
+        "gallery": [
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltba64f41bce11904b/607f9e3bc661f15b3da77f85/breeze_1.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltde7c2fc29aa0d3a0/607f9e3ce650b13fbe2129d2/breeze_2.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt174b8512c8e4d6a5/607f9e3c03ce953dac7563e4/breeze_3.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt706ed4624cc5353d/607f9e3db35a7a3c69a373b8/breeze_5.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc1e8e8a2228fef3a/607f9e3e92f0063e5c0711cb/breeze_6.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt87534a4d10140c71/607f9e3f03ce953dac7563e8/breeze_8.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd323a27f0a9daa93/607f9e4012dc9d3c68356aca/breeze_10.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta0463cfd3f61287d/607f9e4f1cac355a10f6bf96/breeze_12.jpg?auto=webp&width=915"
+
+        ]
+      },
+      {
+        "id": "05",
+        "displayName": "Icebox",
+        "imageUri": require("../assets/maps/icebox/icebox.png"),
+        "imageMapUri": require("../assets/maps/icebox/iceboxMap.png"),
+        "description": "Seu próximo campo de batalha será uma área de escavação secreta da Kingdom retomada pela força do Ártico. Você precisará ter cuidado com os terrenos horizontais dos dois pontos principais, que são protegidos por neve e metal. Aproveite para usar as tirolesas, e seus inimigos nunca verão seu ataque iminente.",
+        "gallery": [
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9ef7b41910a14118/5f80debff6c586323f8b17a3/icebox_1.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6c01692b82ba6ace/5f80debe9245d74a2063d3c5/icebox_2.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta5558199bebb5107/5f80debfa50ed742e7fca4b9/icebox_3.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6c9b4fb24870f16d/5f80dec0f9d3bf27fac3a05f/icebox_4.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5e97ee30cae1b6b6/5f80dec04671ee30c689ca24/icebox_5.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd665c580a4b876c2/5f80debf271ecf4a1a642fe2/icebox_6.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3073fafdd0e84ca8/5f80dec03f52332642075f9b/icebox_7.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9e6c8e8f66a5fcad/5f80debface59e4b82915f48/icebox8.jpg?auto=webp&width=915",
+
+        ]
+      },
+      {
+        "id": "04",
+        "displayName": "Bind",
+        "imageUri": require("../assets/maps/bind/bind.png"),
+        "imageMapUri": require("../assets/maps/bind/bindMap.png"),
+        "description": "Dois pontos. Nenhuma área no meio. Você precisa escolher: direita ou esquerda? E aí, qual vai ser? Ambos os lados oferecem caminhos diretos para os atacantes, e dois teleportadores de sentido único facilitam o flanqueamento.",
+        "gallery": [
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc54ad3a88d94a4d6/5eabe92eaf7e315106b4799b/bind1.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt4d395d5eb0c5aeec/5eabe92d97c0a55d71b7fce5/bind2.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt275a73b80ff9eb5a/5eabe92db8a6356e4ddc0c92/bind3.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt81c2ff999b2e5887/5eabe92d08d37e6d82ef715a/bind4.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta6be60823002f711/5eabe92d4398082ffe23fdb5/bind5.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta7ba841d52448022/5eabe92e2b79652f27c326c4/bind6.jpg?auto=webp&width=915",
+
+        ]
+      },
+      {
+        "id": "03",
+        "displayName": "Haven",
+        "imageUri": require("../assets/maps/haven/haven.png"),
+        "imageMapUri": require("../assets/maps/haven/havenMap.png"),
+        "description": "Sob um mosteiro abandonado, é possível ouvir agentes se enfrentando pelo controle de três pontos distintos. Neste mapa, há mais áreas para controlar. Em compensação, os defensores também conseguem aproveitar o território extra para coordenar investidas mais agressivas.",
+        "gallery": [
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7df0b99a582cc5aa/5eabe987b8a6356e4ddc0ca4/haven1.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt65a4029cdfaf77b4/5eabe9861b51e36d7c1b67ab/haven2.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2bd976c100216469/5eabe98608d37e6d82ef7160/haven3.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt768f194cd2c52f84/5eabe9862b79652f27c326ca/haven4.jpg?auto=webp&width=915",
+
+        ]
+      },
+      {
+        "id": "02",
+        "displayName": "Split",
+        "imageUri": require("../assets/maps/split/split.png"),
+        "imageMapUri": require("../assets/maps/split/splitMap.png"),
+        "description": "Se quiser avançar, é preciso subir. Separados por uma área central elevada, dois pontos fornecem movimentação rápida com duas cordas ascendentes. Cada ponto tem uma torre imponente que é vital para o controle da área. E não se esqueça: mantenha os olhos abertos e focados nas áreas elevadas antes que tudo vá pelos ares.",
+        "gallery": [
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt643d33e2defb855c/5eabe9fe248a28605479c547/split1.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8114d8ae57703cf8/5ed81946bf4ae52c761ec8e8/split2-2.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltdfd43bd79d9b3410/5eabe9fea20afe612d82f833/split3.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf7a4f75409f2dbc1/5ed81936047b8c2b9c25fe74/split4-2.jpg?auto=webp&width=915",
+
+        ]
+      },
+      {
+        "id": "01",
+        "displayName": "Ascent",
+        "imageUri": require("../assets/maps/ascent/ascent.png"),
+        "imageMapUri": require("../assets/maps/ascent/ascentMap.png"),
+        "description": "Com várias opções de posicionamento e conflito, um território aberto divide duas áreas em Ascent. Cada uma pode ser fortificada por portas explosivas irreversíveis que, quando derrubadas, forçam as equipes a destruí-las ou a acharem outra maneira de prosseguir. Não deixe que o inimigo tome o seu território.",
+        "gallery": [
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt930666d9ab927326/5eabe9c45751b2150e57a42c/ascent1.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9e24fe356d0faf81/5eabe9c497c0a55d71b7fceb/ascent2.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt77e465b8079103af/5eabe9c4af7e315106b479a1/ascent3.jpg?auto=webp&width=915",
+          "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta7375f4e704347dc/5eabe9c4b8a6356e4ddc0caa/ascent4.jpg?auto=webp&width=915",
+
+        ]
+      }
     ]
 }

@@ -7,6 +7,7 @@ import { createStackNavigator, StackNavigationProp } from '@react-navigation/sta
 import HomeScreen from './src/pages/Home';
 import AgentScreen from './src/pages/Agent';
 import WeaponScreen from './src/pages/Weapon';
+import MapScreen from './src/pages/Map';
 
 type RootStackParamList = {
   Home: undefined;
@@ -15,6 +16,9 @@ type RootStackParamList = {
   };
   Weapon: {
     weapon: object
+  };
+  Map: {
+    map: object
   };
 };
 
@@ -27,6 +31,7 @@ export default function App() {
             <Stack.Screen name='Home' component={HomeScreen} />
             <Stack.Screen name='Agent' component={AgentScreen} />
             <Stack.Screen name='Weapon' component={WeaponScreen} />
+            <Stack.Screen name='Map' component={MapScreen} />
         </Stack.Navigator>
 
         <StatusBar style="auto" />
