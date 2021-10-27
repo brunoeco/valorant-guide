@@ -9,7 +9,7 @@
 <!--te-->
     
 <h4 align="center" id="sobre">
-    Link para download: https://play.google.com/store/apps/details?id=com.yamakisuo.valorantguide
+    Link para download: https://play.google.com/store/apps/details?id=com.yamakisuo.valorantguid3
     O projeto se trata de um app que fornece informações sobre o jogo FPS Valorant, desde agentes, armas e skins.
 </h4>
 
