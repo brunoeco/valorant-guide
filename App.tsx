@@ -1,8 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, StatusBar as statusBar  } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from './src/pages/Home';
 import AgentScreen from './src/pages/Agent';
@@ -38,14 +37,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    marginTop: statusBar.currentHeight,
-    paddingBottom: 10,
-    
-    flex: 1,
-    backgroundColor: '#F8F8F8',
-    alignItems: 'center',
-  }
-});

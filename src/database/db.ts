@@ -1,38 +1,71 @@
 export const db = {
     "agents": [
         {
-            "id": "15",
-            "displayName": "astra",
-            "function": "controlador",
-            "imageUri": require("../assets/agents/astra/astra.png"),
-            "description": "Astra, a Agente ganense, utiliza energias cósmicas para moldar o campo de batalha a seu bel-prazer. Com total domínio da sua forma astral e um talento estratégico nato, ela está sempre anos-luz à frente dos inimigos.",
+            "id": "17",
+            "displayName": "chamber",
+            "function": "sentinela",
+            "imageUri": require("../assets/agents/chamber/chamber.png"),
+            "description": "Bem vestido e armado até os dentes, o criador de armas francês Chamber coloca os inimigos para correr com uma precisão mortal. Use e abuse do arsenal personalizado dele para segurar posições e abater inimigos de longe, criando a defesa perfeita para qualquer plano.",
             "abilities": [
                 {
-                    "abilityImageUri":  require("../assets/agents/astra/ability_1.png"),
-                    "displayName": "q - pulso nova",
-                    "description": "Posicione Estrelas na Forma Astral (X) ATIVE uma Estrela para detonar um Pulso Nova. O Pulso Nova carrega brevemente e depois estoura, causando concussão a todos os jogadores na área."
+                    "abilityImageUri":  require("../assets/agents/chamber/ability_1.png"),
+                    "displayName": "q - CAÇADOR DE CABEÇAS",
+                    "description": "ATIVE para equipar uma pistola pesada. Use o MODO SECUNDÁRIO com a pistola equipada para mirar."
                 },
 
                 {
-                    "abilityImageUri":  require("../assets/agents/astra/ability_2.png"),
-                    "displayName": "e - nebulosa",
-                    "description": "Posicione Estrelas na Forma Astral (X) ATIVE uma Estrela para transformá-la em uma Nebulosa (fumaça). Utilize (F) em uma Estrela para dissipá-la, retornando a estrela para ser posicionada em um novo local após um período de tempo. Dissipar forma brevemente uma Nebulosa falsa na localização da Estrela antes de retornar."
+                    "abilityImageUri":  require("../assets/agents/chamber/ability_2.png"),
+                    "displayName": "e - RENDEZVOUS",
+                    "description": "POSICIONA duas âncoras de teleporte. Enquanto estiver no chão e dentro do alcance de uma das âncoras, REATIVE para teleportar rapidamente até a outra âncora. Âncoras podem ser recuperadas para serem REPOSICIONADAS."
                 },
 
                 {
-                    "abilityImageUri":  require("../assets/agents/astra/ability_3.png"),
-                    "displayName": "c - poço gravitacional",
-                    "description": "Posicione Estrelas na Forma Astral (X) ATIVE uma Estrela para formar um Poço Gravitacional. Jogadores na área são puxados em direção ao centro antes de ele explodir, deixando frágeis todos que ainda estão presos no centro."
+                    "abilityImageUri":  require("../assets/agents/chamber/ability_3.png"),
+                    "displayName": "c - MARCA REGISTRADA",
+                    "description": "POSICIONA uma armadilha que busca por inimigos. Quando um inimigo visível entrar no alcance, a armadilha inicia uma contagem regressiva e desestabiliza o terreno ao redor, criando um campo duradouro que reduz a velocidade dos jogadores."
                 },
 
                 {
-                    "abilityImageUri":  require("../assets/agents/astra/ability_4.png"),
-                    "displayName": "x - forma astral / divisa cósmica",
-                    "description": "ATIVE (X) para entrar na Forma Astral, em que você pode posicionar Estrelas com DISPARO PRIMÁRIO. As Estrelas podem ser reativadas depois para serem transformadas em Pulso Nova, Nebulosa ou Poço Gravitacional. Quando Divisa Cósmica estiver carregada, utilize o DISPARO SECUNDÁRIO na Forma Astral para começar a mirar e, depois, o DISPARO PRIMÁRIO para escolher dois locais. Após isso, uma Divisa Cósmica infinita surge e conecta os pontos selecionados. A Divisa Cósmica bloqueia disparos e abafa muito o som."
+                    "abilityImageUri":  require("../assets/agents/chamber/ability_4.png"),
+                    "displayName": "x - TOUR DE FORCE",
+                    "description": "ATIVE para invocar um poderoso fuzil de precisão personalizado que abate um inimigo com qualquer acerto. Abater um inimigo cria um campo duradouro que reduz a velocidade dos jogadores dentro dele."
                 }
             ]
 
         },
+        {
+          "id": "15",
+          "displayName": "astra",
+          "function": "controlador",
+          "imageUri": require("../assets/agents/astra/astra.png"),
+          "description": "Astra, a Agente ganense, utiliza energias cósmicas para moldar o campo de batalha a seu bel-prazer. Com total domínio da sua forma astral e um talento estratégico nato, ela está sempre anos-luz à frente dos inimigos.",
+          "abilities": [
+              {
+                  "abilityImageUri":  require("../assets/agents/astra/ability_1.png"),
+                  "displayName": "q - pulso nova",
+                  "description": "Posicione Estrelas na Forma Astral (X) ATIVE uma Estrela para detonar um Pulso Nova. O Pulso Nova carrega brevemente e depois estoura, causando concussão a todos os jogadores na área."
+              },
+
+              {
+                  "abilityImageUri":  require("../assets/agents/astra/ability_2.png"),
+                  "displayName": "e - nebulosa",
+                  "description": "Posicione Estrelas na Forma Astral (X) ATIVE uma Estrela para transformá-la em uma Nebulosa (fumaça). Utilize (F) em uma Estrela para dissipá-la, retornando a estrela para ser posicionada em um novo local após um período de tempo. Dissipar forma brevemente uma Nebulosa falsa na localização da Estrela antes de retornar."
+              },
+
+              {
+                  "abilityImageUri":  require("../assets/agents/astra/ability_3.png"),
+                  "displayName": "c - poço gravitacional",
+                  "description": "Posicione Estrelas na Forma Astral (X) ATIVE uma Estrela para formar um Poço Gravitacional. Jogadores na área são puxados em direção ao centro antes de ele explodir, deixando frágeis todos que ainda estão presos no centro."
+              },
+
+              {
+                  "abilityImageUri":  require("../assets/agents/astra/ability_4.png"),
+                  "displayName": "x - forma astral / divisa cósmica",
+                  "description": "ATIVE (X) para entrar na Forma Astral, em que você pode posicionar Estrelas com DISPARO PRIMÁRIO. As Estrelas podem ser reativadas depois para serem transformadas em Pulso Nova, Nebulosa ou Poço Gravitacional. Quando Divisa Cósmica estiver carregada, utilize o DISPARO SECUNDÁRIO na Forma Astral para começar a mirar e, depois, o DISPARO PRIMÁRIO para escolher dois locais. Após isso, uma Divisa Cósmica infinita surge e conecta os pontos selecionados. A Divisa Cósmica bloqueia disparos e abafa muito o som."
+              }
+          ]
+
+      },
         {
             "id": "03",
             "displayName": "breach",

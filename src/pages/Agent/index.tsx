@@ -1,67 +1,6 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Button, Image, StatusBar as statusBar, ScrollView, ImageURISource } from 'react-native';
-import { Video, AVPlaybackStatus } from 'expo-av';
-import { StackNavigationProp } from '@react-navigation/stack';
-import { RouteProp } from '@react-navigation/native';
-
-type RootStackParamList = {
-    Home: undefined;
-    Agent: {
-        agent: object
-    };
-    Weapon: {
-        weapon: object
-    };
-};
-  
-type ProfileScreenRouteProp = RouteProp<RootStackParamList, 'Agent'>;
-
-type AgentScreenNavigationProp = StackNavigationProp<
-    RootStackParamList,
-    'Agent'
->;
-  
-type Props = {
-    navigation: AgentScreenNavigationProp;
-    route: ProfileScreenRouteProp
-};
-
-type AgentProps = {
-    id: string;
-    displayName: string;
-    function: string;
-    imageUri: ImageURISource;
-    description: string;
-    abilities: [
-        {
-            abilityImageUri: ImageURISource;
-            displayName: string;
-            description: string;
-        },
-
-        {
-            abilityImageUri: ImageURISource;
-            displayName: string;
-            description: string;
-        },
-
-        {
-            abilityImageUri: ImageURISource;
-            displayName: string;
-            description: string;
-        },
-
-        {
-            abilityImageUri: ImageURISource;
-            displayName: string;
-            description: string;
-        }
-    ]
-}
-
-type PlayProps = {
-    isPlaying: boolean
-}
+import { StyleSheet, Text, View, TouchableOpacity, Image, StatusBar as statusBar, ScrollView } from 'react-native';
+import { Props, AgentProps } from './types'
 
 
 export default function Agent({ navigation, route }: Props) {
