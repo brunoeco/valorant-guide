@@ -8,7 +8,7 @@ import HomeScreen from './src/pages/Home';
 import AgentScreen from './src/pages/Agent';
 import WeaponScreen from './src/pages/Weapon';
 import MapScreen from './src/pages/Map';
-import { RootStackParamList } from './src/types';
+import { RootStackParamList } from './src/types/navigationTypes';
 
 const queryClient = new QueryClient();
 

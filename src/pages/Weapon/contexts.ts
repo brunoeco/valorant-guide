@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { WeaponStatsProps } from "./types";
+import { WeaponStatsProps } from "../../types/weaponTypes";
 
 export const WeaponStatsContext = createContext<WeaponStatsProps>({
     fireRate: 0,

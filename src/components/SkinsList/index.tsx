@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FlatList, Image, Text, TouchableOpacity } from "react-native";
-import { styles } from "../../styles";
+import { styles } from "../../pages/Weapon/styles";
 import { skinComponentProps} from "./types";
 
 export default function Skins({ skins, changeSkin }:skinComponentProps) {

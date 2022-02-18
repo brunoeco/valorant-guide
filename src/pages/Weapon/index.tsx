@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import { Text, View, TouchableOpacity, Image } from 'react-native';
 import { Video } from 'expo-av';
-import { Props, WeaponProps } from './types';
+import { Props, WeaponProps } from '../../types/weaponTypes';
 
 import { styles } from './styles';
 
-import Details from './components/Details';
-import Skins from './components/Skins';
-import { WeaponSkinLeveProps } from './components/Skins/types';
+import Details from '../../components/WeaponDetails';
+import Skins from '../../components/SkinsList';
+import { WeaponSkinLeveProps } from '../../components/SkinsList/types';
 
 const backArrowImage = require('../../assets/backArrow.png');
 

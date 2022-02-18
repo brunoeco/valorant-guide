@@ -1,20 +1,16 @@
 import React from "react";
 import { FlatList, TouchableOpacity, Image, Text } from "react-native";
 import { useQuery } from "react-query";
-
-import { connection } from "../../../../database/connection";
-
-import { WeaponProps } from "../../../Weapon/types";
-import { Props } from "../../types";
-
+import { connection } from "../../database/connection";
+import { MapProps } from "../../types/mapTypes";
+import { Props } from "../../types/homeTypes";
 import { ErrorMessage, LoadingMessage } from "../../utils";
-
 
 import { styles } from "./styles";
 
-export function Weapons( { navigation }: Props) {
-    const { data, isLoading, isError } = useQuery('weapons', () => (
-        connection.get<{data: Array<WeaponProps>}>('weapons').then(response => {
+export function Maps( { navigation }: Props) {
+    const { data, isLoading, isError } = useQuery('maps',() => (
+        connection.get<{data:Array<MapProps>}>('maps').then(response => {
             return response.data.data;
         }).catch(() => {
             throw new Error;
@@ -34,15 +30,15 @@ export function Weapons( { navigation }: Props) {
 
     return (
         <FlatList 
-                style={styles.weapons}
+                style={styles.maps}
                 data={data}
                 keyExtractor={item => item.uuid}
-                numColumns={2}
+                numColumns={1}
                 renderItem={({item}) => (
                     <>
-                        <TouchableOpacity style={styles.weapon} onPress={() => navigation.navigate('Weapon', {weapon: item})} >
-                            <Image style={styles.weaponImage} source={{ uri: item.displayIcon }} />
-                            <Text style={styles.weaponName}>{item.displayName.toUpperCase()}</Text>
+                        <TouchableOpacity style={styles.map} onPress={() => navigation.navigate('Map', {map: item})} >
+                            <Image style={styles.mapImage} source={{uri: item.listViewIcon }} />
+                            <Text style={styles.mapName}>{item.displayName.toUpperCase()}</Text>
                         </TouchableOpacity>
                     </>
                 )}    

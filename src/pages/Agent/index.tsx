@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
 
-import { Props, AgentProps } from './types'
+import { Props, AgentProps } from '../../types/agentTypes'
 
 import { styles } from './styles';
 

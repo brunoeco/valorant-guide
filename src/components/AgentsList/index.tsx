@@ -2,9 +2,9 @@ import React from "react";
 import { FlatList, TouchableOpacity, Image, Text } from "react-native";
 import { styles } from "./styles";
 
-import { Props } from "../../types";
-import { connection } from "../../../../database/connection";
-import { AgentProps } from "../../../Agent/types";
+import { Props } from "../../types/homeTypes";
+import { connection } from "../../database/connection";
+import { AgentProps } from "../../types/agentTypes";
 import { ErrorMessage, LoadingMessage } from "../../utils";
 import { useQuery } from "react-query";
 

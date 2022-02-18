@@ -1,7 +1,7 @@
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
 import { ImageURISource } from 'react-native';
-import { RootStackParamList } from '../../types';
+import { RootStackParamList } from './navigationTypes';
 
 export type MapScreenRouteProp = RouteProp<RootStackParamList, 'Map'>;
 

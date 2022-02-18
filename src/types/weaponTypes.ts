@@ -1,6 +1,6 @@
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
-import { WeaponSkinsProps } from "./components/Skins/types";
+import { WeaponSkinsProps } from "../components/SkinsList/types";
 
 export type RootStackParamList = {
     Home: undefined;

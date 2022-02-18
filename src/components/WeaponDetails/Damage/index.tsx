@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { WeaponStatsContext } from "../../context";
-import { styles } from "../../styles";
+import { WeaponStatsContext } from "../../../pages/Weapon/contexts";
+import { styles } from "../../../pages/Weapon/styles";
 
 export default function Damage() {
     return (

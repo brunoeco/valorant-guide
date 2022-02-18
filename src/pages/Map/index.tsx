@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
-import { MapProps, Props } from './types';
+import { MapProps, Props } from '../../types/mapTypes';
 
 import { styles } from './styles';
 

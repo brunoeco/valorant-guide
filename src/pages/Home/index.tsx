@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import { Text, TouchableOpacity, View, Image } from 'react-native';
-import { Props } from './types';
+import { Props } from '../../types/homeTypes';
 
 import { styles } from './styles';
 
-import { Agents } from './components/Agents';
-import { Weapons } from './components/Weapons';
-import { Maps } from './components/Maps';
+import { Agents } from '../../components/AgentsList';
+import { Weapons } from '../../components/WeaponsList';
+import { Maps } from '../../components/MapsList';
 
 const logoImage = require('../../assets/logo.png');
 
