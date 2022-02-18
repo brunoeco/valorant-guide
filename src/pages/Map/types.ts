@@ -1,20 +1,8 @@
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
 import { ImageURISource } from 'react-native';
+import { RootStackParamList } from '../../types';
 
-export type RootStackParamList = {
-    Home: undefined;
-    map: {
-        map: object
-    };
-    Weapon: {
-        weapon: object
-    };
-    Map: {
-        map: object
-    };
-};
-  
 export type MapScreenRouteProp = RouteProp<RootStackParamList, 'Map'>;
 
 export type MapScreenNavigationProp = StackNavigationProp<
@@ -28,12 +16,11 @@ export type Props = {
 };
 
 export type MapProps = {
-    id: string;
+    uuid: string;
     displayName: string;
-    imageUri: ImageURISource;
-    imageMapUri: ImageURISource;
-    description: string;
-    gallery: Array<string>
+    displayIcon: string;
+    listViewIcon: string;
+    coordinates: string;
 }
 
 export type AboutProps = { 

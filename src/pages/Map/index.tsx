@@ -1,47 +1,10 @@
 import React, {useState} from 'react';
-import { Text, View, TouchableOpacity, FlatList, Image, ScrollView } from 'react-native';
-import { AboutProps, MapProps, Props } from './types';
+import { Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { MapProps, Props } from './types';
 
 import { styles } from './styles';
 
 const backArrowImage = require('../../assets/backArrow.png');
-
-function Gallery({ imageGallery }: { imageGallery: Array<string> }) {
-    return (
-        <FlatList 
-            style={styles.mapGallery}
-            data={imageGallery}
-            keyExtractor={(item, index) => index.toString()}
-            renderItem={({item}) => {
-
-                return(
-                <>
-                    <View style={styles.mapGalleryView}>
-                        <Image style={styles.mapGalleryImg} source={{uri: item}} />
-                    </View>
-                </>
-            )}}    
-        />
-    )
-}
-
-function About({imageMapUri, description} : AboutProps) {
-    
-    return (
-        <ScrollView>
-            <View style={styles.mapDescription}>
-                
-                <Image style={styles.mapImg} source={imageMapUri} />
-
-                <Text style={styles.mapDescriptionText}>
-                    {description}
-                </Text>
-
-            </View>
-        </ScrollView>
-    )
-}
-
 
 export default function Map({ navigation, route }: Props) {
     const [ option, setOption ] = useState(true);
@@ -54,12 +17,10 @@ export default function Map({ navigation, route }: Props) {
                 <TouchableOpacity style={styles.goBackButton} onPress={() => navigation.goBack()}>
                     <Image style={styles.backArrowImg} source={backArrowImage} />
                 </TouchableOpacity>
-                
-                <Text style={styles.mapName}>{map.displayName.toUpperCase()}</Text>
 
-                <Image style={styles.mapTopImg} source={map.imageUri} />
+                <Image style={styles.mapTopImg} source={{ uri: map.listViewIcon }} />
                 
-                <View style={styles.menu}>
+                {/* <View style={styles.menu}>
                     <TouchableOpacity style={styles.menuButton} onPress={() => {setOption(true)}}>
                         <Text
                             style={[styles.menuText, {marginRight: 7}, option ? {color: '#FF4655', borderColor: '#FF4655'} : {color: '#fff', borderColor: '#fff'}]}
@@ -76,17 +37,18 @@ export default function Map({ navigation, route }: Props) {
                             Galeria
                         </Text>
                     </TouchableOpacity>
-                </View>
+                </View> */}
                
             </View>
 
-            
+            <View style={styles.mapDescription}>
+                <Text style={styles.mapName}>{map.displayName.toUpperCase()}</Text>                
+                <Text style={styles.mapCoordinates}>{map.coordinates.toUpperCase()}</Text>                
+                <Image style={styles.mapImg} source={{ uri: map.displayIcon }} />
 
-            {option ? (
-                <About imageMapUri={map.imageMapUri} description={map.description} />
-            ) : (
-                <Gallery imageGallery={map.gallery} />
-            )}
+                {/* <Text style={styles.mapDescriptionText}>
+                </Text> */}
+            </View>
             
         </View>
     );

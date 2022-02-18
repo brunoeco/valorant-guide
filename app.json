@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Valorant Guid3",
-    "slug": "valorant-guid3",
+    "name": "Valorant Props",
+    "slug": "valorant-props",
     "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,7 +20,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.yamakisuo.valorantguid3",
+      "package": "com.yamakisuo.valorantprops",
       "versionCode": 4,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",

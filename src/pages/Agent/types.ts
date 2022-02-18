@@ -1,6 +1,5 @@
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
-import { ImageURISource } from 'react-native';
 
 export type RootStackParamList = {
     Home: undefined;
@@ -25,34 +24,23 @@ export type Props = {
 };
 
 export type AgentProps = {
-    id: string;
+    uuid: string;
     displayName: string;
-    function: string;
-    imageUri: ImageURISource;
     description: string;
+    role: {
+        uuid: string;
+        displayName: string;
+        description: string;
+        displayIcon: string;
+    };
+    fullPortrait: string;
+    bustPortrait: string;
     abilities: [
         {
-            abilityImageUri: ImageURISource;
+            slot: string;
             displayName: string;
             description: string;
+            displayIcon: string;
         },
-
-        {
-            abilityImageUri: ImageURISource;
-            displayName: string;
-            description: string;
-        },
-
-        {
-            abilityImageUri: ImageURISource;
-            displayName: string;
-            description: string;
-        },
-
-        {
-            abilityImageUri: ImageURISource;
-            displayName: string;
-            description: string;
-        }
     ]
 }

@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image, StatusBar as statusBar, ScrollView } from 'react-native';
+import { Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
+
 import { Props, AgentProps } from './types'
 
+import { styles } from './styles';
 
 export default function Agent({ navigation, route }: Props) {
     const backArrowImage = require('../../assets/backArrow.png');
@@ -29,7 +31,7 @@ export default function Agent({ navigation, route }: Props) {
             </View>
 
             <View style={styles.agent}>
-                <Image style={styles.agentImg} source={agent.imageUri} />
+                <Image style={styles.agentImg} source={{uri: agent.fullPortrait }} />
 
                 <View style={styles.agentDescription}>
                     <Text style={styles.agentText}>{agent.description}</Text>
@@ -39,21 +41,11 @@ export default function Agent({ navigation, route }: Props) {
 
             <View style={styles.agentAbilities}>
                 <View style={styles.abilitiesIcons}>
-                    <TouchableOpacity style={[styles.abilitiesIconsButton, ]} onPress={() => changeAbility(0)} >
-                        <Image style={styles.abilitiesIconsImg} source={agent.abilities[0].abilityImageUri} />
-                    </TouchableOpacity>
-                    
-                    <TouchableOpacity style={[styles.abilitiesIconsButton, ]} onPress={() => changeAbility(1)} >
-                        <Image style={styles.abilitiesIconsImg} source={agent.abilities[1].abilityImageUri} />
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={[styles.abilitiesIconsButton, ]} onPress={() => changeAbility(2)} >
-                        <Image style={styles.abilitiesIconsImg} source={agent.abilities[2].abilityImageUri} />
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={[styles.abilitiesIconsButton, ]} onPress={() => changeAbility(3)} >
-                        <Image style={styles.abilitiesIconsImg} source={agent.abilities[3].abilityImageUri} />
-                    </TouchableOpacity>
+                    {agent.abilities.map((ability, index) => (
+                        <TouchableOpacity key={index} style={[styles.abilitiesIconsButton, ]} onPress={() => changeAbility(index)} >
+                            <Image style={styles.abilitiesIconsImg} source={{ uri: ability.displayIcon }} />
+                        </TouchableOpacity>
+                    ))}
                 </View>
 
                 <ScrollView>
@@ -73,107 +65,3 @@ export default function Agent({ navigation, route }: Props) {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        marginTop: statusBar.currentHeight,
-        paddingBottom: 10,
-        
-        flex: 1,
-        backgroundColor: '#F8F8F8',
-        alignItems: 'center',
-    },
-
-    menuTop: {
-        width: '100%',
-        alignItems: 'center',
-        marginVertical: 30,
-    },
-
-    agentName: {
-        fontSize: 16,
-        color: '#FF4655',
-    },
-
-    goBackButton: {
-        position: 'absolute',
-        padding: 5,
-        left: 20,
-        top: -5,
-    },
-    
-    backArrowImg: {
-        resizeMode: 'contain',
-        width: 20,
-        height: 20,
-    },
-
-
-    agent: {
-        flexDirection: 'row',
-        width: '100%',
-        minHeight: '40%',
-        paddingHorizontal: 20,
-    },
-
-    agentImg: {
-        resizeMode: 'contain',
-        width: '50%',
-        height: '100%',
-    },
-
-    agentDescription: {
-        justifyContent: 'center',
-        width: '50%',
-    },
-
-    agentText: {
-        fontSize: 11,
-        textAlign: 'right',
-        lineHeight: 15,
-        marginBottom: 10,
-    },
-
-    agentAbilities: {
-        flex: 1,
-        marginTop: 30,
-        width: '100%',
-
-        alignItems: 'center',
-    },
-
-    abilitiesIcons: {
-        flexDirection: 'row',
-    },
-
-    abilitiesIconsButton: {
-        marginHorizontal: '3%',
-        backgroundColor: '#FF4655',
-        width: 50,
-        height: 50,
-        padding: 5,
-        borderRadius: 10,
-        marginBottom: 10
-    },
-
-    abilitiesIconsImg: {
-        resizeMode: 'contain',
-        width: '100%',
-        height: '100%'
-    },
-
-    abilitiesDescription: {
-        marginTop: 20,
-        marginHorizontal: '7%',
-    },
-
-    abilitiesDescriptionTitle: {
-        fontWeight: '700',
-    },
-
-    abilitiesDescriptionText: {
-        marginTop: 20,
-        fontSize: 11,
-        lineHeight: 15
-    },
-});

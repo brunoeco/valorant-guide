@@ -21,23 +21,23 @@ export const styles = StyleSheet.create({
 
     agentImage: {
         position: 'absolute',
-        top: -50,
-        right: 0,
+        top: -40,
+        right: 10,
         resizeMode: 'contain',
-        width: 100,
+        width: 130,
         height: '100%',
     },
 
     agentName: {
         fontWeight: "700",
-        fontSize: 11,
+        fontSize: 12,
         position: 'absolute',
         bottom: 30,
         left: 10,
     },
 
     agentFunction: {
-        fontSize: 12,
+        fontSize: 13,
         position: 'absolute',
         bottom: 10,
         left: 10,

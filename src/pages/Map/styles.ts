@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
         
         flex: 1,
         backgroundColor: '#F8F8F8',
-        alignItems: 'center',
     },
 
     menuTop: {
@@ -15,15 +14,6 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         
         height: 150,
-    },
-
-    mapName: {
-        fontSize: 16,
-        color: '#FF4655',
-        marginBottom: 5,
-        top: 15,
-        zIndex: 5,
-        fontWeight: '700'
     },
 
     goBackButton: {
@@ -43,7 +33,7 @@ export const styles = StyleSheet.create({
 
     mapTopImg: {
         position: 'absolute',
-        resizeMode: 'stretch',
+        resizeMode: 'cover',
         width: '100%',
         height: 150,
         
@@ -70,21 +60,34 @@ export const styles = StyleSheet.create({
     },
 
     map: {
-        flexDirection: 'row',
-        width: '100%',
-        minHeight: '40%',
+        width: 200,
         paddingHorizontal: 20,
-    },
-
-    mapImg: {
-        width: '100%',
-        height: 300,
-        resizeMode: 'contain'
     },
 
     mapDescription: {
         marginTop: 15,
         marginHorizontal: '7%',
+    },
+
+    mapName: {
+        fontSize: 20,
+        color: '#FF4655',
+        zIndex: 5,
+        fontWeight: '700'
+    },
+
+    mapCoordinates: {
+        fontSize: 14,
+        color: '#000',
+        marginBottom: 20,
+        zIndex: 5,
+        fontWeight: '400'
+    },
+
+    mapImg: {
+        width: '100%',
+        height: 300,
+        resizeMode: 'contain',
     },
 
     mapDescriptionText: {
